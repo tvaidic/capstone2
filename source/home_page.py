@@ -1,9 +1,11 @@
 import streamlit as st
 st.set_page_config(
-    page_title = "Elden Arms"
-    page_icon = 
+    page_title = "Elden Arms",
+    page_icon = '🐱‍🏍',
 )
+
 st.title('Elden Arms')
+st.image(r'https://i.redd.it/3e2afpjsi4f61.png')
 st.text('Your one stop shop for all your weapon stats recomendations')
 
 st.header('Heres a list of the pages and functionality')

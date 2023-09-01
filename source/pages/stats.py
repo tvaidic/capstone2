@@ -1,6 +1,10 @@
 from pathlib import Path
 import streamlit as st
-
+st.set_page_config(
+    page_title = "Stats",
+    page_icon = '🐱‍🏍',
+)
+st.title("Weapons Stats")
 import sys
 import os
 import pandas as pd

@@ -1,5 +1,9 @@
 from pathlib import Path
 import streamlit as st
+st.set_page_config(
+    page_title = "Weapon Info",
+    page_icon = "🐱‍🏍"
+)
 import sys
 import os
 from PIL import Image
@@ -14,6 +18,7 @@ cursor = c.weapons.find()
 df = pd.DataFrame(list(cursor))
 df.fillna('None', inplace=True)
 # weapons_list = df.name.tolist()
+st.title('Weapons Info')
 selected_weapon = st.selectbox('Search a weapon', df['name'])
 column1, column2 = st.columns(2)
 weapon_info = df[df['name'] == selected_weapon].iloc[0]
