@@ -16,6 +16,9 @@ class ToMongo(Base):
         self.df.set_index('id',inplace=True)
 
     def upload_one_by_one(self):
+        self.weapons.drop()
+
+        Base.__init__(self)
         for i in self.df.index:
             self.weapons.insert_one(self.df.loc[i].to_dict())
 if __name__ == '__main__':

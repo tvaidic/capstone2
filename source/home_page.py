@@ -1,5 +1,8 @@
 import streamlit as st
-
+st.set_page_config(
+    page_title = "Elden Arms"
+    page_icon = 
+)
 st.title('Elden Arms')
 st.text('Your one stop shop for all your weapon stats recomendations')
 
@@ -10,8 +13,6 @@ st.text('Search a weapon and return all information including stats, images, and
 st.subheader('Stats')
 st.text('See trends of your choice')
 
-st.subheader('Genre Search')
-st.text('Search weapon by Category')
 
 st.subheader('Recomendations')
 st.text('Get recomendations based on an input  of a stat or weapon')

@@ -9,6 +9,7 @@ class Base:
         self.api_url3 = "https://eldenring.fanapis.com/api/weapons?limit=400&page=2"
         self.api_url4 = "https://eldenring.fanapis.com/api/weapons?limit=400&page=3"
         self.get_data()
+        self.clean_data()
     
     def return_url(self):
         return self.api_url1, self.api_url2, self.api_url3, self.api_url4
