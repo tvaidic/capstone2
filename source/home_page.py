@@ -1,0 +1,17 @@
+import streamlit as st
+
+st.title('Elden Arms')
+st.text('Your one stop shop for all your weapon stats recomendations')
+
+st.header('Heres a list of the pages and functionality')
+st.subheader('Weapon Search')
+st.text('Search a weapon and return all information including stats, images, and descriptions')
+
+st.subheader('Stats')
+st.text('See trends of your choice')
+
+st.subheader('Genre Search')
+st.text('Search weapon by Category')
+
+st.subheader('Recomendations')
+st.text('Get recomendations based on an input  of a stat or weapon')
