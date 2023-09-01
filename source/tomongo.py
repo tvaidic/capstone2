@@ -7,8 +7,8 @@ class ToMongo(Base):
     def __init__(self):
         Base.__init__(self)
         load_dotenv()
-        self.user = os.getenv('USER')
-        self.password = os.getenv('PASS')
+        self.user = os.getenv('USERNAME')
+        self.password = os.getenv('PASSWORD')
         self.mongo_url = f'mongodb+srv://{self.user}:{self.password}@cluster0.qpyltsb.mongodb.net/?retryWrites=true&w=majority'
         self.client = pymongo.MongoClient(self.mongo_url)
         self.db = self.client.db 
