@@ -35,6 +35,7 @@ if not df.empty:
         st.subheader("Recommended Weapons")
         for index, row in df.iterrows():
             st.write("Name:", row['name'])
+            st.image(row['image'])
             st.write("Category:", row['category'])
             st.write("Similarity Score:", row['similarity'])
             st.write("Required Stats:")
