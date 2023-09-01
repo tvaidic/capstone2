@@ -18,7 +18,6 @@ patsy==0.5.3
 Pillow==9.5.0
 plotly==5.16.1
 plotly-express==0.4.1
-protobuf==4.24.1
 pyarrow==12.0.1
 pydeck==0.8.0
 Pygments==2.16.1
